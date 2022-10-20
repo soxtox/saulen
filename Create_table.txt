@@ -2,6 +2,13 @@ create table table_name (
 	column_name type constrain,
 	column_name1, type(length), constrain
 )
+WITH (
+	appendonly=true,
+	compresslevel=5,
+	orientation=column,
+	compresstype=zlib,
+	blocksize=32768
+)
 tablespace tablespace_name
 Distributed by ( required column one or many separated by comma)
 partition by list (column)

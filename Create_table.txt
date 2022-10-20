@@ -1,0 +1,11 @@
+create table table_name (
+	column_name type constrain,
+	column_name1, type(length), constrain
+)
+tablespace tablespace_name
+Distributed by ( required column one or many separated by comma)
+partition by list (column)
+( 
+partition partition_name VALUES (column_value),
+partition partition_name VALUES (column_value)
+);
